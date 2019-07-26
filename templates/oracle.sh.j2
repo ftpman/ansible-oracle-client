@@ -1,4 +1,3 @@
-export OCI_HOME={{ instantclient_path }}
-export OCI_LIB_DIR={{ instantclient_path }}
-export OCI_INC_DIR={{ oracle_include_path }}
-export OCI_INCLUDE_DIR={{ oracle_include_path }}
+export ORACLE_HOME={{ oracle_path }}/{{ version_cfg.lib }}/{{ instantclient_path }}
+export OCI_HOME={{ oracle_path }}/{{ version_cfg.lib }}/{{ instantclient_path }}
+export OCI_LIB_DIR={{ oracle_path }}/{{ version_cfg.lib }}/{{ instantclient_path }}/lib

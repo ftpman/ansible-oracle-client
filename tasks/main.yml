@@ -23,3 +23,7 @@
 - name: Deploy to the server
   include_tasks: deploy.yml
   when: oracle_clients | length > 0
+
+- name: Deploy to the server (rpm)
+  include_tasks: deploy.rpm.yml
+  when: pkg_type == "rpm"

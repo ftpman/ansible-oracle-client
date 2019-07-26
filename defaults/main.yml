@@ -7,6 +7,7 @@ oracle_clients:   ""
 incl_type:        "remote"
 arch:             ""
 version:          ""
+pkg_type:         "rpm"
 
 ora_directory:        'Documents'
 tnsnames_file:        '{{ ora_directory }}/tnsnames.ora'
@@ -15,3 +16,4 @@ sqlnet_file:          '{{ ora_directory }}/sqlnet.ora'
 tnsnames_tgt_path:    '{{ tns_admin_path }}/tnsnames.ora'
 sqlnet_tgt_path:      '{{ tns_admin_path }}/sqlnet.ora'
 
+remove_tmp_rpm_pkg:   false
