@@ -63,6 +63,13 @@
   become: false
   when: (system_config.system == "linux" and ansible_distribution == "CentOS")
 
+# - name: Remove old oracle instantclients packages
+#   package:
+#     name: "oracle-instantclient*"
+#     state: absent
+#   become: false
+#   when: (system_config.system == "linux" and ansible_distribution == "CentOS")
+
 - name: More facts
   set_fact:
     libtype: "{{ lib_types[system_config.system] }}"

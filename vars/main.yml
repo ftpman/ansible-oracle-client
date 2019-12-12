@@ -2,7 +2,7 @@
 
 oracle_path:            '/usr/lib/oracle' # '/opt/oracle'
 instantclient_path:     'client64' # '{{ oracle_path }}/instantclient'
-# oracle_include_path:    '{{ oracle_path }}/include'
+oracle_include_path:    '/usr/include/oracle'
 tns_admin_path:         '/etc' # '{{ instantclient_path }}/network/admin'
 
 arch_folders:
@@ -21,7 +21,7 @@ system_configs:
   CentOS:
     system:       linux
     # version:      18.5.0.0.0
-    version:      12.2.0.1.0
+    version:      19.3.0.0.0
   MacOS:
     system:       macos
     version:      18.1.0.0.0
@@ -67,9 +67,16 @@ version_configs:
       lib:          '18_5'
       link:         '18.1'
       zip_suffix:   '18.5.0.0.0dbru'
+    19.3.0.0.0:
+      lib:          '19.3'
+      link:         '19.1'
+      zip_suffix:   '19.3.0.0.0'
+      rpm_suffix:   '19.3.0.0.0-1'
+      ver_suffix:   '19.3'
 
 packages:
   - basic
+  # - devel
 #   - basiclite
 #   - sdk
 #   - sqlplus

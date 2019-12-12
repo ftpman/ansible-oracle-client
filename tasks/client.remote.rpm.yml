@@ -124,6 +124,8 @@
       ORACLE_HOME={{ oracle_path }}/{{ version_cfg.lib }}/{{ instantclient_path }}
       OCI_HOME={{ oracle_path }}/{{ version_cfg.lib }}/{{ instantclient_path }}
       OCI_LIB_DIR={{ oracle_path }}/{{ version_cfg.lib }}/{{ instantclient_path }}/lib
+      # OCI_INC_DIR={{ oracle_include_path }}/{{ version_cfg.lib }}/{{ instantclient_path }}
+      # OCI_INCLUDE_DIR={{ oracle_include_path }}/{{ version_cfg.lib }}/{{ instantclient_path }}
       {{ lib_path }}={{ oracle_path }}/{{ version_cfg.lib }}/{{ instantclient_path }}/lib
     insertafter: EOF
     marker: "# {mark} ANSIBLE MANAGED BLOCK - ORACLE"
